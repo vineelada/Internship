@@ -1,0 +1,11 @@
+import re
+
+pattern = r'^\w+'
+
+str=input("enter a string : ")
+
+matches = re.search(pattern, str)
+if matches:
+    print(f"Matched first word: '{matches.group(0)}'")
+else:
+    print("No match")

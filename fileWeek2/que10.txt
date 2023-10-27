@@ -1,0 +1,9 @@
+import re
+
+pattern = r'\b\d{4}\b'
+
+str=input("enter a string : ")
+
+matches = re.findall(pattern, str)
+
+print(matches)

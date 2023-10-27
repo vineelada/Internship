@@ -1,0 +1,8 @@
+import re
+
+pattern = r'ab*'
+
+str=input("enter a string : ")
+
+if re.match(pattern, str):
+    print(f"'{str}' matches the pattern")

@@ -1,0 +1,11 @@
+import re
+
+pattern = r'ab{2,3}'
+
+str=input("enter a string : ")
+
+if re.match(pattern, str):
+    print(f"'{str}' matches the pattern")
+
+else:
+    print(f"'{str}' doesn't match the pattern")
